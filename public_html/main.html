@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graffiti artist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="graffiti_artist.css">
+    </head>
+    <body class="justify medium">
+        <!-- Nav bar for large screens -->
+        <nav class="top-bar hide-small-screen">
+            <a href="#about" class="button left-align multicolor-background"> <span style="font-size: xx-large;">Ɗ</span>aVe. Graffiti artist |¦</a>
+            <a href="projects_animation.html" class="button right-align multicolor-background">Slide-show</a>
+            <a href="main.html" class="button right-align multicolor-background">Home ¦|</a>
+        </nav>
+
+        <!-- Nav bar for small screens -->
+        <nav class="justify hide-large-screen small">
+            <a href="#about" class="button left-align multicolor-background"> <span style="font-size: large;">Ɗ</span>aVe. Graffiti artist |¦</a>
+            <a href="projects_animation.html" class="button right-align multicolor-background">Slide-show</a>
+            <a href="main.html" class="button right-align multicolor-background">Home ¦|</a>
+        </nav>
+
+        <!-- Gallery -->
+        <div class="background-image">
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery-item1">
+                        <img src="photos/1.jpg" alt="image-1" class="gallery-image">
+                        <div class="overlay-green">
+                            <div class="text-green">«Frozen angels»<br><br>Moscow, Russia</div>
+                        </div>
+                    </figure>
+                    <figure class="gallery-item2">
+                        <img src="photos/2.jpg" alt="image-2" class="gallery-image">
+                        <div class="overlay-pink">
+                            <div class="text-pink">«Después dudas»<br><br>Barcelona, Spain</div>
+                        </div>
+                    </figure>
+                    <figure class="gallery-item3">
+                        <img src="photos/3.jpg" alt="image-3" class="gallery-image">
+                        <div class="overlay-yellow">
+                            <div class="text-yellow">«Pequeña hada»<br><br>Barcelona, Spain</div>
+                        </div>
+                    </figure>
+                    <figure class="gallery-item4">
+                        <img src="photos/4.jpg" alt="image-4" class="gallery-image">
+                        <div class="overlay-blue">
+                            <div class="text-blue">«Ellas»<br><br>Barcelona, Spain</div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>  
+        <footer>
+            <div class="footer margin footer-item" id="about">
+                <a href="#" class="button right-align multicolor-background"><span style="font-size: xx-large">F</span>acebook</a>
+                <a href="#" class="button right-align multicolor-background"><span style="font-size: xx-large">I</span>nstagram <span class="hide-small-screen">¦| </span></a>
+                <p class="float-left button"><a href="mailto:dave_graffiti@gmail.com?Subject=Hello%20Dave" target="_blank" class="multicolor-background">dave_graffiti@gmail.com</a><span class="hide-small-screen">|¦</span></p>
+                <br>
+                <button onclick="toTop()" id="toTopButton" title="Go to top">
+                    <span class="float-left large-dot" id="green"><br> T</span> 
+                    <span class="float-left large-dot" id="yellow"><br> O</span>
+                    <span class="float-left large-dot" id="pink"><br> P</span>
+                </button>
+            </div>
+        </footer>  
+        <p class="right-align small"><span style="background-image: url('photos/graffiti.jpg')"> Designed by 
+                <a href="https://www.linkedin.com/in/alyona-iablokova-623ab762/" target="_blank">Alionie</a> </span>
+
+            <script>
+                // Top button //
+
+                var mybutton = document.getElementById("toTopButton");
+
+                function toTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
+    </body>
+</html>
